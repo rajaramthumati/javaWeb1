@@ -24,10 +24,10 @@
   
     <properties>     
      <releases.distribution.url>
-        ${repository.server.root}/test-releases/
+        ${repository.server.root}/training-releases/
      </releases.distribution.url>
      <snapshots.distribution.url>
-        ${repository.server.root}/test-snapshots/
+        ${repository.server.root}/training-snapshots/
      </snapshots.distribution.url>
   </properties>
   
