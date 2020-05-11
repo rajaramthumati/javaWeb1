@@ -7,6 +7,30 @@
   <version>1.0-SNAPSHOT</version>
   <name>java-web-project Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <distributionManagement>
+        <repository>
+            <id>internalMavenReleaseRepository</id>
+            <name>Internal Maven Release Repository</name>
+            <url>${releases.distribution.url}</url>
+         </repository>
+         <snapshotRepository>
+            <id>internalMavenSnapshotRepository</id>
+            <name>Internal Snapshots Repository</name>
+            <url>${snapshots.distribution.url}</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+  </distributionManagement>
+  
+    <properties>     
+     <releases.distribution.url>
+        ${repository.server.root}/test-releases/
+     </releases.distribution.url>
+     <snapshots.distribution.url>
+        ${repository.server.root}/test-snapshots/
+     </snapshots.distribution.url>
+  </properties>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
